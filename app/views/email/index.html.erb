@@ -5,8 +5,8 @@
     <thead>
         <tr> 
             <td>OBJECT</td> 
-            <td>ACTIONS</td> 
-            <td>BODY</td>
+            <td>BODY</td> 
+            <td>ACTIONS</td>
         </tr>
 
     </thead> 
@@ -14,18 +14,21 @@
     <tbody> 
 
     <% @email.each do |email| %>   
-    
+
+     
     <tr> 
-    <td> <%= link_to email.object, email_show_path(:id => email.id),  :remote => true %></td>
+    <div class="link">
+      <td> <%= link_to email.object, email_show_path(:id => email.id),  :remote => true %></td>
+    </div>
     <td> 
-      <div class="link">
-        <a href="<%= email_path(email.id) %>" class="btn btn-danger" data-confirm="sur?" data-method="delete">Supprimer</a> 
-      </div>
+      <div id="show"></div>
     </td>
     <td>
-        <div id="show"></div>
-    </td> 
+      <%= link_to 'Destroy', email, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'email_delete' %> 
+    </td>
+       </div> 
     </tr>
+     
         <%end%>
     </tbody> 
 </table>
