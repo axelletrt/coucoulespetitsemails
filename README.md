@@ -1,24 +1,12 @@
-# README
+Lien en Production : https://mailvieweraxelle.herokuapp.com/ ✔ 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Colonnes pour object, corps et lien pour supprimer l'email ✔ 
 
-Things you may want to cover:
+Show avec Ajax ✔ 
+Delete avec Ajax ✔
+Seeds.rb avec gem ✔
+Marquer les emails non lus ❌ (https://www.youtube.com/watch?v=gdyw5RIoxvA) 
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bonne Correction :) 
+@axelletrt
