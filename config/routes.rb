@@ -4,6 +4,6 @@ Rails.application.routes.draw do
 
   get 'email/show', to: "email#show"
 
-  resources :emails 
+  resources :email 
   
 end

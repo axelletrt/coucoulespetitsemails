@@ -4,10 +4,9 @@
 
     <thead>
         <tr> 
-            <td>id</td> 
-            <td>Object</td> 
-            <td>Body</td> 
-            <td>Actions</td>
+            <td>OBJECT</td> 
+            <td>ACTIONS</td> 
+            <td>BODY</td>
         </tr>
 
     </thead> 
@@ -17,14 +16,15 @@
     <% @email.each do |email| %>   
     
     <tr> 
-    <td><%= email.id %></td>
-    <td><%= email.object %></td> 
     <td> <%= link_to email.object, email_show_path(:id => email.id),  :remote => true %></td>
     <td> 
+      <div class="link">
         <a href="<%= email_path(email.id) %>" class="btn btn-danger" data-confirm="sur?" data-method="delete">Supprimer</a> 
+      </div>
+    </td>
+    <td>
+        <div id="show"></div>
     </td> 
-
-
     </tr>
         <%end%>
     </tbody> 
@@ -32,8 +32,3 @@
 
 
 
-
-<div class="link">
-  <%= link_to "email", email_show_path, remote: true %>
-</div>
-<div id="show"></div>

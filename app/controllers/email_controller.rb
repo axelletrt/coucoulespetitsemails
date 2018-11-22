@@ -14,7 +14,6 @@ class EmailController < ApplicationController
     def destroy 
         @email = Email.find(params[:id])
         @email.destroy
-        redirect_to emails_path 
     end 
 
 end
