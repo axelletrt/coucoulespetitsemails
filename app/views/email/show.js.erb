@@ -1,3 +1,6 @@
 $(function() {
     $("#show").html( "<%= j render 'show'%>");
+    $("#show").click(function(){
+		$(this).css("background-color", "yellow");
+});
 });
